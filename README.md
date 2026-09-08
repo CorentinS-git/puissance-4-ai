@@ -11,16 +11,6 @@ Projet d'implémentation complète du jeu Puissance 4 en Python avec interface g
   - **Moyen :** Minimax à profondeur réduite (profondeur 3).
   - **Difficile :** Minimax avec élagage Alpha-Bêta à profondeur 5, ordonnancement central des coups et heuristique de fenêtres d'alignement.
 
-## Structure du projet
-
-puissance4/
-├── assets/             # Ressources visuelles (logo)
-├── core/               # Logique pure et état du plateau (board.py)
-├── ai/                 # Heuristiques et algorithme Minimax (minimax.py, evaluation.py)
-├── ui/                 # Rendu visuel et composants graphiques (gui.py)
-├── game_gui.py         # Point d'entrée de l'application graphique
-├── main.py             # Point d'entrée de la version console (PvP / PvIA)
-└── .gitignore          # Fichiers temporaires exclus de Git
 
 ## Installation & Lancement
 
