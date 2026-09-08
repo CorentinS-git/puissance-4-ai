@@ -111,3 +111,13 @@ class Board:
     def est_plein(self):
         """Vérifie si le plateau est plein (match nul)."""
         return len(self.get_colonnes_valides()) == 0
+    
+    def annuler_coup(self, col):
+        """
+        Annule le dernier coup joué dans la colonne spécifiée (enlève le pion le plus haut).
+        Utilisé par l'IA pour explorer l'arbre sans cloner la grille.
+        """
+        for r in range(LIGNES):
+            if self.grille[r][col] != VIDE:
+                self.grille[r][col] = VIDE
+                break
